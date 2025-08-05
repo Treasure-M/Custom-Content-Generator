@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          model: "mistralai/mistral-small-3.2-24b-instruct:free"
+          model: "mistralai/mistral-small-3.2-24b-instruct:free",
           messages: [{ role: "user", content: prompt }]
         })
       });
@@ -150,3 +150,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
