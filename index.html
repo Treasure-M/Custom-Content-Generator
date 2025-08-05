@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Educational Content Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <body style="background-image: url('education-concept-3d-books-clock-blue-background_387680-334.avif'); background-size: cover;">
+
+</head>
+<body>
+  <h1>Educational Content Generator</h1>
+
+  <form id="genForm">
+    <label>Content Type
+      <select id="contentType">
+        <option value="lesson">Lesson Plan</option>
+        <option value="study">Study Guide</option>
+        <option value="assessment">Assessment</option>
+        <option value="activity">Activity</option>
+        <option value="notes">Notes</option>
+      </select>
+    </label>
+
+    <label>Grade Level
+      <select id="gradeLevel">
+        <option>Grade 8</option>
+        <option>Grade 9</option>
+        <option>Grade 10</option>
+        <option>Grade 11</option>
+        <option>Grade 12</option>
+      </select>
+    </label>
+
+    <label>Difficulty
+      <select id="difficulty">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+    </label>
+
+    <label>Topic(s)/Question(s)
+      <input id="topic" type="text" placeholder="e.g., Photosynthesis/What is Photosynthesis?" required />
+    </label>
+
+    <button type="submit">Generate</button>
+  </form>
+
+  <div id="loading" style="display:none; text-align:center; margin-top:1rem;">
+    <p>⏳ Generating content... Please wait.</p>
+  </div>
+
+  <div id="outputSection" style="display:none;">
+    <h2>Generated Content</h2>
+    <pre id="output"></pre>
+   <!-- Replace the existing download button with this section -->
+<div id="downloadOptions" style="display: none; text-align: center; margin-top: 1rem;">
+  <button id="downloadPdfBtn">Download PDF</button>
+  <button id="downloadWordBtn">Download Word</button>
+  <button id="downloadTxtBtn">Download Text</button>
+</div>
+  </div>
+</body>
+</html>
