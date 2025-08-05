@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          model: "meta-llama/llama-3.1-405b-instruct",
+          model: "mistralai/mistral-small-3.2-24b-instruct:free"
           messages: [{ role: "user", content: prompt }]
         })
       });
@@ -148,4 +148,5 @@ document.addEventListener("DOMContentLoaded", () => {
     a.download = "generated_content.txt";
     a.click();
   });
+
 });
