@@ -39,3 +39,42 @@ Add caching and offline fallback
 Connect to South African curriculum topics
 Implement toxicity filtering
 Optimize error handling and retries
+
+Installation 📦
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Treasure-M/Custom-Content-Generator.git
+2.Install dependencies:
+
+bash
+
+cd Custom-Content-Generator
+npm install  # or yarn install
+Usage 🛠️
+Basic Usage
+javascript
+const generator = require('./generator');
+const content = generator.generate({
+  template: 'basic',
+  variables: {
+    name: 'World'
+  }
+});
+
+console.log(content); // Outputs: "Hello, World!"
+
+Command Line
+
+bash
+
+node cli.js --template=newsletter --output=./output/newsletter.html
+Configuration ⚙️
+Create a config.json file to customize the generator:
+
+json
+{
+  "templatesDir": "./templates",
+  "outputDir": "./output",
+  "defaultFormat": "html"
+}
