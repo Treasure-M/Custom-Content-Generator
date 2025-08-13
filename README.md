@@ -1,6 +1,6 @@
 🌐 Live Demo: https://custom-content-generator.onrender.com
 
-# Custom-Content-Generator
+Custom-Content-Generator
 A lightweight, browser-based educational content generator that uses the meta-llama/llama-3.1-405b-instruct model via OpenRouter.ai.. Generate lesson plans, worksheets, assessments, and more—all customizable by topic and grade level.
 
 Features
@@ -12,7 +12,7 @@ Download button for offline access to generated content
 Client-side only—no backend needed
 
  How It Works
-When a user selects a content type, grade, and topic, the app formats a prompt string and sends it to OpenRouter via the fetch() API using the selected model. Responses are displayed immediately and can be downloaded as .txt files, pdf and word.docx.
+When a user chooses a content type, grade, and subject, the app formats a prompt string and transmits it to OpenRouter through the fetch() API, utilizing the chosen model. Answers are shown instantly and can be downloaded as .txt files, PDF, and Word .docx.
 
  Tech Stack
  
@@ -35,17 +35,17 @@ API keys should never be committed to a public repo. In production, consider usi
 
 Roadmap
 
-Add caching and offline fallback
-Connect to South African curriculum topics
+Add caching and offline fallback.
+Link to South African curriculum topics.
 Implement toxicity filtering
-Optimize error handling and retries
+Optimize error handling and retries.
 
 Installation 📦
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Treasure-M/Custom-Content-Generator.git
-2.Install dependencies:
+2. Install dependencies:
 
 bash
 
@@ -78,3 +78,6 @@ json
   "outputDir": "./output",
   "defaultFormat": "html"
 }
+
+
+
